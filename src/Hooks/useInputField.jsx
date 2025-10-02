@@ -5,6 +5,7 @@ const useInputField = (defaultValue) => {
 
   const handleFieldOnChange = (e) => {
     setFieldValue(e.target.value);
+    console.log(e.target.value);
   };
   return [fieldValue, handleFieldOnChange];
 };
